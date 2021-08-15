@@ -1,10 +1,15 @@
 #Magazyn Moduł 5 
 #1commit f exit program ma ie włczyć 
-import sys
+#import sys
 
-in=input("na razie wpisz tylko exit")
 
-while in == 'exit'
-    print("wpisałeś coś innego niż exit ")
-print('by by')
-exit(0)
+def exit(a):
+    while a != 'exit':
+        print("wpisałeś coś innego niż exit ")
+        break
+    print('by by')
+    exit(0)
+
+if __name__== '__main__':
+    a=input("na razie wpisz tylko exit")
+    exit(a)
